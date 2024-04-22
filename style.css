@@ -1,0 +1,14 @@
+:root {
+    --white: #fff;
+    --pink: #f76ac1;
+    --purple: #a59de6;
+    --blue: #8acfe9;
+    --pink-light: #fecaf4;
+}
+
+/* para dar color de degradado al fondo de la página */
+body {
+    background: linear-gradient(to bottom, var(--purple), var(--pink),var(--pink-light));
+    height: 100vh; /* para ocupar todo el tamaño de la pantalla y ser responsive */
+    font-family: 'Satisfy', sans-serif;
+}

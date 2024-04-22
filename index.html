@@ -4,12 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prjoject2</title>
-    <link href="index.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Project2-ToDoList</title>
+    <link href="style.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>To do list</h1>
-
+    <div class="container">
+     <!--Conetnido de la sección 1 - titulo + fecha + estado tareas --> 
+    <div class="section1">
+        <h1>To do list</h1>
+        <div id="date"></div>
+        <p id="total">Total: 4</p>
+        <p i="completed">Completed: 2</p> 
+    </div>
+    <!--Conetnido de la sección 2 - agregar tareas - -->  
+    <div class="section-addtask">
+        <input type="text" id="task-input" placeholder="What are your task for today" />
+        <button id="addtask">Add</button>
+    </div>
+    <!--Contenido de la sección 3 - lista tareas --> 
+    <div class="section-task">
+        <h3>Your tasks for today</h3>
+        <ul id="list">
+            <li>
+                <i class="far fa-circle co" data="done" id="0"></i>
+                <p class="text">do the project</p>
+                <i class="fas fa-trash de" data="deleted" id="0"></i>
+            </li>   
+        </ul>
+    </div>
+    </div>
     <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
