@@ -1,14 +1,153 @@
+/* para resetear los estilos por defecto de los navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* definimos estas variables de color para una personalización más fácil */
 :root {
     --white: #fff;
     --pink: #f76ac1;
-    --purple: #a59de6;
-    --blue: #8acfe9;
+    --purple: #483ba9;
+    --purple-light: #b3a1e7;
+    --blue: hsl(176, 64%, 82%);
     --pink-light: #fecaf4;
 }
 
+/* para dar estilo al contenedor principal y hacerlo responsive*/
+.container {
+    max-width: 80%;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+
+}
 /* para dar color de degradado al fondo de la página */
 body {
     background: linear-gradient(to bottom, var(--purple), var(--pink),var(--pink-light));
     height: 100vh; /* para ocupar todo el tamaño de la pantalla y ser responsive */
     font-family: 'Satisfy', sans-serif;
+    margin: 20px;
+    text-align: center;
+}
+
+/* -- sección 1 -- */
+
+/* para dar estilo al titulo */
+.section1 h1 {
+    font-size: 3rem;
+    color: var(--white);
+    text-align: center;
+    margin-top: 2rem;
+}
+/* para dar estilo al párrafo */
+.section1 p {
+    font-size: 1rem;
+    color: var(--blue);
+    text-align: center;
+}
+/* para dar estilo a la fecha */
+#date {
+    font-size: 1rem;
+    color: var(--white);
+    padding: 50px 0 5px 0;
+}
+
+/* sección 2 - ADD TASK */
+
+/* para dar estilo a la sección: -- agregar tarea -- */
+.section-addtask {
+    background: var(--pink-light);
+    border-radius: 35px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+}
+ /* para dar estilo al input de agregar tarea */
+.section-addtask input {
+    border: none;
+    background-color: var(--pink-light);
+    border-radius: 40px;
+    font-size: 1rem;
+    margin: 10px;
+    padding: 5px;
+    width: 85%;
+}
+
+/* para dar estilo al placeholder del input */
+.section-addtask input::placeholder {
+    color: var(--purple-light);
+}
+  
+/* damos estilo al botón de agregar tarea */
+.section-addtask button {
+    background: var(--pink);
+    display: flex;
+    justify-content: center;
+    border: 20px;
+    border-radius: 30px;
+    color: var(--white);
+    font-size: 1rem;
+    padding: 8px;
+    width: 10%;
+    margin: 10px;
+}
+/* damos estilo al botón de agregar tarea cuando pasamos el mouse por encima, cambio color + pointer + aumentar tamaño*/
+.section-addtask button:hover {
+    background: var(--purple);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* sección 3 - TASK LIST */
+
+/* para dar estilo al titulo de la lista de tareas */
+.section-tasklist h2 {
+    color: var(--purple);
+}
+
+/* para dar estilo a la lista de tareas */
+.section-tasklist #list {
+    background: var(--pink-light);
+    border-radius: 40px;
+    height: auto;
+    margin-top: 20px;
+    padding: 10px;
+    color: var(--purple);
+   
+}   
+/* para dar estilo a cada tarea de la lista */
+.section-tasklist li {
+    margin: 10px;
+    padding: 10px;
+    background: var(--purple-light);
+    border-radius: 40px;
+    color: var(--purple);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+/* para dar estilo a los botones de la tarea*/
+.section-tasklist i {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* para dar estilo a los botones de la tarea cuando pasamos el mouse por encima */
+.section-tasklist i:hover {
+    color: var(--pink);
+}
+
+/* para dar estilo al párrafo de la lista de tareas */
+.section-tasklist > ul p {
+    font-size: 1.2rem;
+}
+
+.line-through {
+    text-decoration: line-through;
 }
