@@ -29,16 +29,16 @@ body {
     font-family: 'Satisfy', sans-serif;
     margin: 20px;
     text-align: center;
-}
+} 
 
-/* -- sección 1 -- */
+/* -- sección 1 - MY LIST: titulo+fecha  -- */
 
 /* para dar estilo al titulo */
 .section1 h1 {
     font-size: 3rem;
     color: var(--white);
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 /* para dar estilo al párrafo */
 .section1 p {
@@ -48,7 +48,7 @@ body {
 }
 /* para dar estilo a la fecha */
 #date {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: var(--white);
     padding: 50px 0 5px 0;
 }
@@ -85,7 +85,7 @@ body {
   
 /* damos estilo al botón de agregar tarea */
 .section-addtask button {
-    background: var(--pink);
+    background: var(--purple);
     display: flex;
     justify-content: center;
     border: 20px;
@@ -98,7 +98,7 @@ body {
 }
 /* damos estilo al botón de agregar tarea cuando pasamos el mouse por encima, cambio color + pointer + aumentar tamaño*/
 .section-addtask button:hover {
-    background: var(--purple);
+    background: var(--pink);
     cursor: pointer;
     transform: scale(1.1);
 }
@@ -110,16 +110,15 @@ body {
     color: var(--purple);
 }
 
-/* para dar estilo a la lista de tareas */
-.section-tasklist #list {
+/* para dar estilo al recuadro de la lista de tareas */
+.section-tasklist #list-tasks {
     background: var(--pink-light);
     border-radius: 40px;
     height: auto;
     margin-top: 20px;
     padding: 10px;
-    color: var(--purple);
-   
 }   
+
 /* para dar estilo a cada tarea de la lista */
 .section-tasklist li {
     margin: 10px;
@@ -138,16 +137,17 @@ body {
     font-size: 20px;
 }
 
-/* para dar estilo a los botones de la tarea cuando pasamos el mouse por encima */
+/* para dar estilo a los botones de la tarea cuando pasamos el mouse por encima - cambiar de color + agrandar icono */
 .section-tasklist i:hover {
     color: var(--pink);
+    transform: scale(1.2);
 }
 
-/* para dar estilo al párrafo de la lista de tareas */
+/* para dar estilo al párrafo de la lista de tareas - tamaño letra */
 .section-tasklist > ul p {
     font-size: 1.2rem;
 }
-
+/* para que la tarea salga tachada cuando se haya cumplido */
 .line-through {
     text-decoration: line-through;
 }
