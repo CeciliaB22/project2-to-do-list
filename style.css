@@ -1,16 +1,14 @@
 /* para resetear los estilos por defecto de los navegadores */
 * {
+    box-sizing: border-box; /*para que el tamaño total de un elemento incluya el relleno y el borde, pero no el margen.*/
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 /* definimos estas variables de color para una personalización más fácil */
 :root {
-    --white: #fff;
     --pink: #f76ac1;
     --purple: #483ba9;
     --purple-light: #b3a1e7;
-    --blue: hsl(176, 64%, 82%);
     --pink-light: #fecaf4;
 }
 
@@ -36,20 +34,20 @@ body {
 /* para dar estilo al titulo */
 .section1 h1 {
     font-size: 3rem;
-    color: var(--white);
+    color: var(--pink);
     text-align: center;
     margin-top: 3rem;
 }
 /* para dar estilo al párrafo */
 .section1 p {
     font-size: 1rem;
-    color: var(--blue);
+    color: var(--purple-light);
     text-align: center;
 }
 /* para dar estilo a la fecha */
 #date {
     font-size: 1.5rem;
-    color: var(--white);
+    color: var(--purple);
     padding: 50px 0 5px 0;
 }
 
@@ -90,7 +88,7 @@ body {
     justify-content: center;
     border: 20px;
     border-radius: 30px;
-    color: var(--white);
+    color: var(--pink-light);
     font-size: 1rem;
     padding: 8px;
     width: 10%;
@@ -100,7 +98,8 @@ body {
 .section-addtask button:hover {
     background: var(--pink);
     cursor: pointer;
-    transform: scale(1.1);
+    transform: scale(1.2);
+    color: var(--purple);
 }
 
 /* sección 3 - TASK LIST */
